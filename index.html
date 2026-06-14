@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Ebook Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="hero">
+        <nav>
+            <div class="logo">📘 EbookStore</div>
+            <div><a href="#books">Books</a><a href="admin.html">Contact support</a><a href="#">Terms & Condition</a></div>
+        </nav>
+        <section><span class="tag">50 Premium Ebooks</span>
+            <h1>Learn faster with practical ebooks</h1>
+            <p>Explore ebooks for QA, testing, interview preparation, and career growth.</p><a class="primary"
+                href="#books">View Collection</a>
+        </section>
+    </header>
+    <main>
+        <section class="tools" id="books">
+            <div>
+                <p class="blue">Our Collection</p>
+                <h2>50 Premium Ebooks</h2>
+            </div>
+            <div class="filters"><input id="searchInput" placeholder="Search ebook..."><select id="categoryFilter">
+                    <option value="All">All Categories</option>
+                </select></div>
+        </section>
+        <section id="ebookGrid" class="grid"></section>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modalBox"><button class="close" onclick="closeModal()">×</button><img id="modalImage">
+            <div><span id="modalBadge" class="badge"></span>
+                <h2 id="modalTitle"></h2>
+                <p id="modalDesc"></p>
+                <ul id="modalList"></ul>
+                <h3 id="modalPrice"></h3><button id="modalBuy" class="buy">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <footer>© 2026 EbookStore. Built for digital ebook selling.</footer>
+    <script src="ebooks-data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

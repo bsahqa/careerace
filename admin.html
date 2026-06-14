@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Edit Guide</title><link rel="stylesheet" href="style.css"></head><body><div class="admin"><a href="index.html">← Back to Website</a><h1>How to Edit Your Ebook Website</h1><p class="note">Only edit <b>ebooks-data.js</b> for ebook image, title, price, content, PDF link, category, and badge.</p><h2>Example Ebook Block</h2><pre>{
+  id: 1,
+  title: "500 Selenium Interview Questions",
+  price: 299,
+  oldPrice: 599,
+  category: "Selenium",
+  image: "images/selenium.jpg",
+  shortDescription: "Best ebook for Selenium interview preparation.",
+  description: "Complete guide with real-time Selenium questions and answers.",
+  highlights: [
+    "500+ questions",
+    "C# examples",
+    "Framework design",
+    "Freshers to experienced"
+  ],
+  pdfUrl: "ebooks/selenium.pdf",
+  badge: "Bestseller"
+}</pre><h2>Image Update</h2><p>Put image inside <b>images</b> folder and update:</p><pre>image: "images/selenium.jpg"</pre><h2>PDF Update</h2><p>Put PDF inside <b>ebooks</b> folder and update:</p><pre>pdfUrl: "ebooks/selenium.pdf"</pre><h2>Razorpay Key</h2><p>Open <b>payment.js</b> and replace:</p><pre>key: 'YOUR_RAZORPAY_KEY_ID'</pre></div></body></html>
